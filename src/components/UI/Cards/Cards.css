@@ -1,0 +1,22 @@
+ul {
+  display: inline-block;
+  list-style-type: none;
+  margin-bottom: 15px;
+  display: flex;
+  gap: 1rem;
+}
+
+ul li {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+ul li.selected {
+  background-color: #343869;
+  color: white;
+}
+
+ul li:hover:not(.selected) {background-color: #ddd;}

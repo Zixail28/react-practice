@@ -1,0 +1,53 @@
+.movie {
+	width: 300px;
+	height: 555px;
+	margin: 16px;
+	background-color: #343869;
+	border-radius: 5px;
+	overflow: hidden;
+	position: relative;
+  transition: .3s;
+}
+
+.movie-info {
+	display: flex;
+	padding: 8px 16px 16px 16px;
+	justify-content: space-between;
+	height: 100px;
+}
+
+.movie-info h3 {
+	color: #fff;
+	font-size: 19px;
+}
+
+.movie-info span {
+	padding: 4px 8px;
+	border-radius: 4px;
+	background-color: #1c204a;
+	width: 41px;
+	text-align: center;
+	align-self: center;
+	font-weight: bold;
+	font-size: 1rem;
+}
+
+.movie-info span.green {
+	color: #90ee90;
+}
+.movie-info span.orange {
+	color: #ffa500;
+}
+.movie-info span.red {
+	color: #f00;
+}
+
+.movie img {
+	width: 300px;
+	height: 450px;
+}
+
+.movie:hover {
+  cursor: pointer;
+  transform: scale(1.025);
+}
