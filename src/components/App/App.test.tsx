@@ -13,6 +13,5 @@ describe('', () => {
     );
     const searchElem = screen.getByPlaceholderText(/type to search/i);
     expect(searchElem).toBeInTheDocument();
-    screen.debug();
   });
 });

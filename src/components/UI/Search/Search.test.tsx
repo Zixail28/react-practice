@@ -50,14 +50,14 @@ describe('Search localstorage test', () => {
       <App />
     </BrowserRouter>
   );
-  it('save value in search input after unmount/mount', () => {
-    let searchInput = document.querySelector('.search-txt');
+  it('save value in search input after unmount/mount', async () => {
+    let searchInput = screen.getByPlaceholderText(/type to search/i);
     expect((searchInput! as HTMLInputElement).value).toEqual('');
-    userEvent.type(searchInput!, 'test text');
+    await userEvent.type(searchInput!, 'test text');
     expect((searchInput! as HTMLInputElement).value).toEqual('test text');
     userEvent.click(screen.getByText(/aboutus/i));
     userEvent.click(screen.getByText(/home/i));
-    searchInput = document.querySelector('.search-txt');
+    searchInput = screen.getByPlaceholderText(/type to search/i);
     expect((searchInput! as HTMLInputElement).value).toEqual('test text');
   });
 });

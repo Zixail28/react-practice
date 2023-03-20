@@ -7,5 +7,5 @@ import { mockArr } from '../../../components/data/mocks/dataForCards';
 test('Cards test', () => {
   render(<Cards data={mockArr} />);
   const cardElems = document.querySelector('.cards-container');
-  expect(cardElems!.children.length).toEqual(mockArr.length * 2 + 1);
+  expect(cardElems!.children.length).toEqual(mockArr.length);
 });
